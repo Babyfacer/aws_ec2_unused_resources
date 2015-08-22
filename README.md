@@ -2,19 +2,19 @@
 Simple python script that finds unused EC2 resources and sends email via SES
 
 Resources checked:
-– Disassociated Elastic Ip Addresses (Costs)
+- Disassociated Elastic Ip Addresses (Costs)
 
-– Unattached Volumes (Costs)
+- Unattached Volumes (Costs)
 
-– Unused snapshots (Snapshots that are not associated with AMI, Costs)
+- Unused snapshots (Snapshots that are not associated with AMI, Costs)
 
-– Security Groups (SGs that are not associated with any EC2, Doesn’t cost)
+- Security Groups (SGs that are not associated with any EC2, Doesn’t cost)
 
-– Elastic Load Balancers (ELBs with no instances, Costs)
+- Elastic Load Balancers (ELBs with no instances, Costs)
 
-– Launch Configurations (LCs that are not associated with a ASG, Doesn’t cost)
+- Launch Configurations (LCs that are not associated with a ASG, Doesn’t cost)
 
-– Auto Scaling Groups (ASGs that Desired Capacity set to 0, Doesn’t cost)
+- Auto Scaling Groups (ASGs that Desired Capacity set to 0, Doesn’t cost)
 
 Of course script can be changed according to your environment, for instance you can use ASG to use later.
 
