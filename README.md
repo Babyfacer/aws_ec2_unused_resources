@@ -13,3 +13,5 @@ Resources checked:
 Of course script can be changed according to your environment, for instance you can use ASG to use later.
 
 To configure script, you need your account-id (owner-id parameter is used to find the snapshots that you own). You can also limit the region_list according to your demand. You should also verify your email address to get email. To fetch data from AWS and send email, you need an IAM user with the permissions below. When the script runs, it fetches all the resources and find the unused ones, then create the report.html file and sends it via SES.
+
+Reference link: http://www.wekanban.com/amazon-web-services-unused-ec2-resources-checker/
